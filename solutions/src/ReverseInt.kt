@@ -1,4 +1,4 @@
-import kotlin.math.sign
+
 
 class ReverseInt {
     fun reverse(x: Int): Int {
@@ -6,7 +6,7 @@ class ReverseInt {
         var finalInt = 0
         while (originalInteger != 0) {
             val toAdd = originalInteger % 10
-            if (finalInt.times(10.toLong()) > Int.MAX_VALUE) {
+            if (finalInt.times(10.toLong()) > Int.MAX_VALUE  || finalInt.times(10.toLong()) < Int.MIN_VALUE) {
                 return 0
             }
             finalInt *= 10
