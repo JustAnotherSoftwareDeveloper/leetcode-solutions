@@ -1,6 +1,7 @@
 
 
 class ReverseInt {
+    //https://leetcode.com/problems/reverse-integer/description/
     fun reverse(x: Int): Int {
         var originalInteger = x
         var finalInt = 0
