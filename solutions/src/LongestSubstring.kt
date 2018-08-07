@@ -14,10 +14,6 @@ class LongestSubstring {
             answer = max(answer , index - beginIndex + 1)
             subStringMap[c] = index
         }
-
-        if (subStringMap.size == s.length) {
-            return s.length
-        }
         return answer
     }
 }
