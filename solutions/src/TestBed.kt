@@ -6,18 +6,9 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
         println("Starting")
-        for (i in 0 until 10) {
-            println("${measureTimeMillis{
-                val N = 1000000
-                val B = 1000
-                val blacklist = listOf(0..B).flatMap { it }.toIntArray()
-
-                val randomizer = RandomWithBlacklist(N,blacklist)
-                for (j in 0 until 50000) {
-                    randomizer.pick()
-                }
-            }}ms")
-        }
+        var pre = intArrayOf(5,0,-5,-10,-1,3,2,4,10,7,6,8,20,15,25)
+        val tester = ConstructBinaryTreeFromTraversals()
+        tester.inOrderTraverse(tester.constructFromPre(pre))
 
 
 

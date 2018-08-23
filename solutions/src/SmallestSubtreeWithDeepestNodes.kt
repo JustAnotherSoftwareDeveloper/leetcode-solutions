@@ -2,6 +2,7 @@ import kotlin.math.max
 
 class SmallestSubtreeWithDeepestNodes {
     //https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/description/
+    data class TreeNode(val `val`: Int = 0, var left: TreeNode? = null, var right: TreeNode? = null)
     data class NodeWithDepth(val node: TreeNode? , val depth: Int)
     fun subtreeWithAllDeepest(root: TreeNode?) : TreeNode? { //O(nLog(n))
         return depthFirstSearch(root).node
