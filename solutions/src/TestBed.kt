@@ -6,9 +6,10 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
         println("Starting")
-        var pre = intArrayOf(5,0,-5,-10,-1,3,2,4,10,7,6,8,20,15,25)
-        val tester = ConstructBinaryTreeFromTraversals()
-        tester.inOrderTraverse(tester.constructFromPre(pre))
+        var edges = arrayOf(intArrayOf(2,1,1), intArrayOf(2,3,1), intArrayOf(3,4,1))
+        val tester = NetworkDelayTime()
+        val distance = tester.networkDelayTime(edges,4,2)
+        println(distance)
 
 
 
