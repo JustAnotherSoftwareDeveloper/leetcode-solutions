@@ -6,10 +6,11 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
         println("Starting")
-        var edges = arrayOf(intArrayOf(2,1,1), intArrayOf(2,3,1), intArrayOf(3,4,1))
-        val tester = NetworkDelayTime()
-        val distance = tester.networkDelayTime(edges,4,2)
-        println(distance)
+        val days = intArrayOf(1,2,3,4,6,8,9,10,13,14,16,17,19,21,24,26,27,28,29)
+        val costs = intArrayOf(3,14,50)
+        val tester = MinCostForTickets()
+        val minCost = tester.mincostTickets(days,costs)
+        println(minCost)
 
 
 
