@@ -5,12 +5,23 @@ import kotlin.system.measureTimeMillis
 
 
 fun  main(args: Array<String>) {
-        println("Starting")
-        val days = intArrayOf(1,2,3,4,6,8,9,10,13,14,16,17,19,21,24,26,27,28,29)
-        val costs = intArrayOf(3,14,50)
-        val tester = MinCostForTickets()
-        val minCost = tester.mincostTickets(days,costs)
-        println(minCost)
+
+        val tester = SearchRotatedSortedArray()
+
+        val arrOne = intArrayOf(5,1,3)
+        var arrTwo = intArrayOf(3,5,1)
+
+
+        val results = listOf(
+                tester.search(intArrayOf(2,4,5,6,7,0,1),0),
+                tester.search(intArrayOf(5,1,3),1),
+                tester.search(intArrayOf(3,5,1,2),5),
+                tester.search(intArrayOf(1),1),
+                tester.search(intArrayOf(3,1),0),
+                tester.search(intArrayOf(3,1),1)
+        )
+        println("Results")
+        results.forEach { println(it) }
 
 
 
