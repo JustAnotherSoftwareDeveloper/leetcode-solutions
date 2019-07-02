@@ -6,14 +6,11 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
 
-        val tester = CoinChange()
+        val tester = NumArray(intArrayOf(-2,0,3,-5,2,-1))
 
-
-        val results = listOf(
-                tester.coinChange(intArrayOf(186,419,83,408),6249)
-        )
-        println("Results")
-        results.forEach { println(it) }
+        println(tester.sumRange(0,2))
+        println(tester.sumRange(2,5))
+        println(tester.sumRange(0,5))
 
 
 
