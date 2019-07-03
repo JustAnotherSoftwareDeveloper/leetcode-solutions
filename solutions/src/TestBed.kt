@@ -6,12 +6,13 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
 
-        val tester = NumArray(intArrayOf(-2,0,3,-5,2,-1))
+        val tester = MaximumSubarray()
 
-        println(tester.sumRange(0,2))
-        println(tester.sumRange(2,5))
-        println(tester.sumRange(0,5))
-
+        tester.maxSubArray(intArrayOf(-2,1,-3,4,-1,2,1,-5,4)) // 6
+        tester.maxSubArray(intArrayOf(-1,0,-2,2)) // 2
+        tester.maxSubArray(intArrayOf(-2,1)) // 1
+        tester.maxSubArray(intArrayOf(1,-2,0)) // 1
+        tester.maxSubArray(intArrayOf(-1)) // -1
 
 
     }
