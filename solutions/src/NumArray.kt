@@ -13,6 +13,7 @@ class NumArray(  nums: IntArray) {
     }
 
     fun sumRange(i: Int, j: Int) : Int {
+
         return sums[j+1] - sums[i]
 
     }
