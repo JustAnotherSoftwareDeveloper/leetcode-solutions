@@ -6,8 +6,11 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
 
-        val tester = ProductOfArrayExceptSelf()
-        tester.productExceptSelf(intArrayOf(1,2,3,4))
-        tester.productExceptSelf(intArrayOf(2,3,4,5))
+        val tester = LongestIncreasingSubsequence()
+        tester.lengthOfLIS(intArrayOf(10,9,2,5,3,7,101,18))
+        tester.lengthOfLIS(intArrayOf())
+        tester.lengthOfLIS(intArrayOf(3,1,2,5))
+        tester.lengthOfLIS(intArrayOf(1))
+
 
 }
