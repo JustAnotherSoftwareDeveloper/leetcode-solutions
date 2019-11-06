@@ -6,10 +6,11 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
 
-        val tester = CanIWinSol()
-        tester.canIWin(10,40)
-        tester.canIWin(10,10)
-        tester.canIWin(10,11)
+        val tester = ClimbStairs()
+        println(tester.climbStairs(3))
+        println(tester.climbStairs(4))
+        println(tester.climbStairs(5))
+        println(tester.climbStairs(6))
 
 
 
