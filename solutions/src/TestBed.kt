@@ -6,11 +6,8 @@ import kotlin.system.measureTimeMillis
 
 fun  main(args: Array<String>) {
 
-        val tester = ClimbStairs()
-        println(tester.climbStairs(3))
-        println(tester.climbStairs(4))
-        println(tester.climbStairs(5))
-        println(tester.climbStairs(6))
+        val tester = MinPathSum()
+        println(tester.minPathSum(arrayOf(intArrayOf(1,3,1), intArrayOf(1,5,1), intArrayOf(4,2,1))))
 
 
 
