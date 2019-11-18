@@ -24,7 +24,5 @@ class ProductOfArrayExceptSelf {
             below*above
 
         }.toIntArray()
-
-
     }
 }
