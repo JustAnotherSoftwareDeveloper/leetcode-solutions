@@ -10,7 +10,12 @@ fun  main(args: Array<String>) {
 //    val target = intArrayOf(0,4)
 //    val destination = intArrayOf(3,2)
 //    println(tester.shortestDistance(matrix,target,destination))
-     val tester = MergeStones()
+     val tester = ShortestStringConcat()
+     println(tester.shortestWay("abc","abcdabc"))
+     println(tester.shortestWay("abc","abcabc"))
+     println(tester.shortestWay("xyz","xzyxz"))
+     println(tester.shortestWay("aaa","aaaaaaa"))
+     println(tester.shortestWay("adbsc","addddddddddddsbc"))
 
 }
 
