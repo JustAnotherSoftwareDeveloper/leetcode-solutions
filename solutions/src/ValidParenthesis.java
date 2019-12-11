@@ -15,13 +15,13 @@ public class ValidParenthesis {
             if (openChars.contains(c)) {
                 charStack.push(c);
             }
-            else if (!charStack.isEmpty() && correspondingChars.get(c) == charStack.peek()) {
-                charStack.pop();
-            }
             else {
-                return charStack.isEmpty();
+                Character topElement = charStack.empty() ? '#' : charStack.pop();
+                if (topElement != correspondingChars.get(c)) {
+                    return false;
+                }
             }
         }
-        return true;
+        return charStack.isEmpty();
     }
 }
