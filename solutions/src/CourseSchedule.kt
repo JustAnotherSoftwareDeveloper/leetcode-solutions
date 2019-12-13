@@ -22,7 +22,6 @@ class CourseSchedule {
                 courseToPreReq[it]!!.isEmpty()
             }.forEach { queue.add(it) }
         }
-        println(courseToPreReq.all {it.value.isEmpty()})
         return courseToPreReq.all { it.value.isEmpty() }
 
     }
