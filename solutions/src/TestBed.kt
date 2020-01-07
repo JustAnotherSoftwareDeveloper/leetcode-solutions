@@ -2,7 +2,8 @@
 
 
 fun  main(args: Array<String>) {
-     val tester = DivideTwoIntegers()
+     val tester = IntegerToRoman()
+     println(tester.intToRoman(1844))
 }
 
 
