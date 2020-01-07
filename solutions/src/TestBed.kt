@@ -2,8 +2,8 @@
 
 
 fun  main(args: Array<String>) {
-     val tester = ThreeSumClosest()
-     println(tester.threeSumClosest(intArrayOf(0,1,2),3))
+     val tester = FourSum()
+     println(tester.fourSum(intArrayOf(1,0,-1,0,-2,2),0))
 }
 
 
