@@ -2,8 +2,8 @@
 
 
 fun  main(args: Array<String>) {
-     val tester = IntegerToRoman()
-     println(tester.intToRoman(1844))
+     val tester = ThreeSumClosest()
+     println(tester.threeSumClosest(intArrayOf(0,1,2),3))
 }
 
 
