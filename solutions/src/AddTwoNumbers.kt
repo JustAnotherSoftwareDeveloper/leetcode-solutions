@@ -11,18 +11,20 @@ class AddTwoNumbers {
             var carryBit = 0
             while (el1 != null || el2!= null) {
                 var value : Int
-                if (el1 == null) {
-                    value = el2!!.`val` + carryBit
-                    el2 = el2.next
-                }
-                else if (el2 == null) {
-                   value = el1.`val` + carryBit
-                    el1 = el1.next
-                }
-                else {
-                    value = el1.`val` + el2.`val` + carryBit
-                    el1 = el1.next
-                    el2 = el2.next
+                when {
+                    el1 == null -> {
+                        value = el2!!.`val` + carryBit
+                        el2 = el2.next
+                    }
+                    el2 == null -> {
+                        value = el1.`val` + carryBit
+                        el1 = el1.next
+                    }
+                    else -> {
+                        value = el1.`val` + el2.`val` + carryBit
+                        el1 = el1.next
+                        el2 = el2.next
+                    }
                 }
                 iter.next = ListNode(value % 10)
                 iter = iter.next!!
