@@ -2,8 +2,8 @@
 
 
 fun  main(args: Array<String>) {
-     val tester = CombinationNumbers()
-     println(tester.combinationSum(intArrayOf(2,3,6,7),7))
+     val tester = Permutations()
+     println(tester.permute(intArrayOf(1,2,3)))
 }
 
 
