@@ -21,5 +21,5 @@ class Permutations {
 
     }
 
-    class Permutation(val list: List<Int> = listOf(), val set: Set<Int>)
+    private class Permutation(val list: List<Int> = listOf(), val set: Set<Int>)
 }
