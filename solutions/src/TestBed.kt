@@ -2,8 +2,12 @@
 
 
 fun  main(args: Array<String>) {
-     val tester = GasStation()
-     println(tester.canCompleteCircuit(intArrayOf(1,2,3,4,5), intArrayOf(3,4,5,1,2)))
+     val tester = CanJump()
+     val results = listOf(
+             tester.canJump(intArrayOf(2,3,1,1,4)),
+             tester.canJump(intArrayOf(3,2,1,0,4))
+     )
+     println(results)
 }
 
 
