@@ -1,6 +1,5 @@
 class StockWithTransactionFee {
     fun maxProfit(prices: IntArray, fee: Int) : Int {
-        println("fee: $fee ,prices: ${prices.contentToString()}")
         if (prices.size < 2) {
             return 0
         }
