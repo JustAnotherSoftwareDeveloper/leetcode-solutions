@@ -3,11 +3,12 @@ import kotlin.time.measureTime
 
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = RemoveDuplicatesFromSortedArrayTwo()
+        val tester = QueriesOnAPermutationWithKey()
         val results = listOf(
-            tester.removeDuplicates(intArrayOf(1,1,1,2,2,3))
+                tester.processQueries(intArrayOf(3,1,2,1),5)
+
         )
-        println(results.map { it })
+        println(results.map { it.toList() })
     })
 
 }
