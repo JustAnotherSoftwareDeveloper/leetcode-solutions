@@ -3,9 +3,9 @@ import kotlin.time.measureTime
 
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester =  ConstructKPalindromeStrings()
+        val tester =  LetterTilePossibilities()
         val results = listOf(
-              tester.canConstruct("annabelle",2)
+              tester.numTilePossibilities("AAB")
         )
         println(results.map { it })
     })
