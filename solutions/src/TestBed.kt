@@ -3,10 +3,11 @@ import kotlin.time.measureTime
 
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester =  RestoreIpAddresses()
+        val tester =  isSubsequenceOne()
         val results = listOf(
-              tester.restoreIpAddresses("25525511135"),
-                tester.restoreIpAddresses("010010")
+            tester.isSubsequence("abc","ahbgdc"),
+                tester.isSubsequence("axc","ahbdgc"),
+            tester.isSubsequence("","ahbdgc")
         )
         println(results.map { it })
     })
