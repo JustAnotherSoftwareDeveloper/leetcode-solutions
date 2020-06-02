@@ -1,14 +1,16 @@
+import kotlin.time.ExperimentalTime
 import kotlin.time.measureTime
 
 
+@ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester =  OutOfBoundsPaths()
+        val tester = CourseScheduleTwo()
         val results = listOf(
-                tester.findPaths(1,3,3,0,1)
+                tester.findOrder(2, arrayOf(intArrayOf(1,0)))
 
         )
-        println(results.map { it })
+        println(results.map { it.toList() })
     })
 
 }
