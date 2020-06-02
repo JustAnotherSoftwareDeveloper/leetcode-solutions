@@ -3,9 +3,9 @@ import kotlin.time.measureTime
 
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester =  MaximumSubArraySum()
+        val tester =  OutOfBoundsPaths()
         val results = listOf(
-                tester.kConcatenationMaxSum(intArrayOf(-5,-2,0,0,3,9,-2,-5,4),5)
+                tester.findPaths(1,3,3,0,1)
 
         )
         println(results.map { it })
