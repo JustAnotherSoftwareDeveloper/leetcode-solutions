@@ -5,18 +5,14 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = Search2DMatrixTwo()
+        val tester = WaterAndJug()
         val results = listOf(
-                tester.searchMatrix(
-                        arrayOf(
-                                intArrayOf(1,4,7,11,15),
-                                intArrayOf(2,5,8,12,19),
-                                intArrayOf(3,6,9,16,22),
-                                intArrayOf(10,13,14,17,24),
-                                intArrayOf(18,21,23,26,30)
-                        ),
-                        20
-                )
+
+            tester.canMeasureWater(3,5,4),
+                tester.canMeasureWater(5,3,4),
+                tester.canMeasureWater(2,6,5),
+                tester.canMeasureWater(6,2,5)
+
 
         )
         println(results.map { it })
