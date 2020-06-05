@@ -5,17 +5,14 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = WaterAndJug()
+        val tester = TopKFrequentElements()
         val results = listOf(
+               tester.topKFrequent(intArrayOf(1,1,1,2,2,3),2)
 
-            tester.canMeasureWater(3,5,4),
-                tester.canMeasureWater(5,3,4),
-                tester.canMeasureWater(2,6,5),
-                tester.canMeasureWater(6,2,5)
 
 
         )
-        println(results.map { it })
+        println(results.map { it.toList() })
     })
 
 }
