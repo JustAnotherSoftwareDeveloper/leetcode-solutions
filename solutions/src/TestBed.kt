@@ -5,14 +5,15 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = TopKFrequentElements()
+        val tester = LongestWordInDictionaryThroughDeleting()
         val results = listOf(
-               tester.topKFrequent(intArrayOf(1,1,1,2,2,3),2)
+              tester.findLongestWord("abpcplea", listOf("ale","apple","monkey","pea")),
+                tester.findLongestWord("abpcplea", listOf("a","b","c"))
 
 
 
         )
-        println(results.map { it.toList() })
+        println(results.map { it })
     })
 
 }
