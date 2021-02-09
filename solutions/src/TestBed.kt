@@ -5,8 +5,8 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = MatrixBlockSum();
-        val results =FindPathInZigZagTree().pathInZigZagTree(14)
+        val tester = SherlockAndCost()
+        val results = tester.cost(arrayOf(1,2,3))
         println(results)
     })
 
