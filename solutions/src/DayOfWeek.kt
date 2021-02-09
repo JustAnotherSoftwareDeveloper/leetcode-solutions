@@ -1,6 +1,6 @@
 class DayOfWeek {
     fun dayOfTheWeek(day: Int, month: Int, year: Int) : String {
-        val weekDays = listOf("Friday","Saturday","Sunday","Monday","Tuesday","WednesDay","Thursday");
+        val weekDays = listOf("Friday","Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday");
 
         var totalDays = day;
         for (i in 1971 until year) {
