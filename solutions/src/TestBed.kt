@@ -5,8 +5,8 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = SherlockAndCost()
-        val results = tester.cost(arrayOf(1,2,3))
+        val tester = QueensAttackTwo()
+        val results = tester.queensAttack(4,0,4,4, arrayOf())
         println(results)
     })
 
