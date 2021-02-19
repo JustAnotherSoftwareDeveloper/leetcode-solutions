@@ -5,10 +5,13 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = SumOfAbsoluteDifferences()
+        val tester = ReverseSubstringParenthesis()
         val result = listOf(
-                tester.getSumAbsoluteDifferences(intArrayOf(2,3,5)).toList(),
-                tester.getSumAbsoluteDifferences(intArrayOf(1,4,6,8,10)).toList()
+                tester.reverseParentheses("(u(love)i)"),
+                tester.reverseParentheses("a(bcdefghijkl(mno)p)q"),
+            tester.reverseParentheses("(abcd)"),
+
+                tester.reverseParentheses("(ed(et(oc))el)")
         )
         println(result)
 
