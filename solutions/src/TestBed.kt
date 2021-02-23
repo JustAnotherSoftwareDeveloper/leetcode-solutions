@@ -5,13 +5,10 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = ReverseSubstringParenthesis()
+        val tester = MaxScoreFromRemovingStones()
         val result = listOf(
-                tester.reverseParentheses("(u(love)i)"),
-                tester.reverseParentheses("a(bcdefghijkl(mno)p)q"),
-            tester.reverseParentheses("(abcd)"),
-
-                tester.reverseParentheses("(ed(et(oc))el)")
+                tester.maximumScore(2,4,6),
+                tester.maximumScore(4,4,6)
         )
         println(result)
 
