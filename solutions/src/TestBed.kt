@@ -5,10 +5,9 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = MaxScoreFromRemovingStones()
+        val tester = ArrayNesting()
         val result = listOf(
-                tester.maximumScore(2,4,6),
-                tester.maximumScore(4,4,6)
+                tester.arrayNesting(intArrayOf(5,4,0,3,1,6,2))
         )
         println(result)
 
