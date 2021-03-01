@@ -5,9 +5,9 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = ArrayNesting()
+        val tester = GrumpyBookstoreOwner()
         val result = listOf(
-                tester.arrayNesting(intArrayOf(5,4,0,3,1,6,2))
+                tester.maxSatisfied(intArrayOf(1,0,1,2,1,1,7,5), intArrayOf(0,1,0,1,0,1,0,1),3)
         )
         println(result)
 
