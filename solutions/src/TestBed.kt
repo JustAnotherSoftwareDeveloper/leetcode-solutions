@@ -5,11 +5,11 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = MinStepsToMakeAnagram()
+        val tester = MinimumDeletionCostToAvoidRepeatingLetters()
         val result = listOf(
-                tester.minSteps("anagram".reversed(),"anagram"),
-                tester.minSteps("leetcode","practice"),
-                tester.minSteps("bab","aba")
+                tester.minCost("abaac", intArrayOf(1,2,3,4,5)),
+                tester.minCost("abc", intArrayOf(1,2,3)),
+                tester.minCost("aabaa", intArrayOf(1,2,3,4,1))
         )
         println(result)
 
