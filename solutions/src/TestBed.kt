@@ -5,16 +5,25 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = MinimumDeletionCostToAvoidRepeatingLetters()
+        val tester = DeleteNodesAndReturnForest()
+
+
         val result = listOf(
-                tester.minCost("abaac", intArrayOf(1,2,3,4,5)),
-                tester.minCost("abc", intArrayOf(1,2,3)),
-                tester.minCost("aabaa", intArrayOf(1,2,3,4,1))
+                traverse1()
         )
         println(result)
 
     })
 
+}
+
+private fun traverse1() : List<Int> {
+    val tester = DeleteNodesAndReturnForest()
+    val root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(3)
+    root.right!!.right = TreeNode(4)
+    return tester.delNodes(root, intArrayOf(1,2)).map { it!!.`val` }
 }
 
 
