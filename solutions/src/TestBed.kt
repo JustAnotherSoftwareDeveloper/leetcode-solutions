@@ -5,31 +5,15 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = RankTeamsByVotes()
+        val tester = LongestCommonPrefix()
 
 
         val result = listOf(
-                tester.rankTeams(
-                        arrayOf(
-                                "BCA",
-                                "CAB",
-                                "CBA",
-                                "ABC",
-                                "ACB",
-                                "BAC"
-                        )
-                ),
-                tester.rankTeams(arrayOf(
-                   "WXYZ",
-                   "XYZW"
-                )),
-                tester.rankTeams(arrayOf(
-                        "ABC",
-                        "ACB",
-                        "ABC",
-                        "ACB",
-                        "ACB"
-                ))
+            tester.longestCommonPrefix(arrayOf("flower","flow","flight")),
+            tester.longestCommonPrefix(arrayOf("dog","car","bed")),
+            tester.longestCommonPrefix(arrayOf("racecar","dog","car")),
+            tester.longestCommonPrefix(arrayOf("flow","flow","flower")),
+            tester.longestCommonPrefix(arrayOf("flow","flow","flow"))
         )
         println(result)
 
