@@ -5,16 +5,17 @@ import kotlin.time.measureTime
 @ExperimentalTime
 fun main(args: Array<String>) {
     println(measureTime {
-        val tester = SearchInsertPosition()
+        val tester = PalindromLinkedList()
+
+
 
 
         val result = listOf(
-            tester.searchInsert(intArrayOf(1,3),0),
-           tester.searchInsert(intArrayOf(1,3,5,6),5),
-            tester.searchInsert(intArrayOf(1,3,5,6),2),
-            tester.searchInsert(intArrayOf(1,3,5,6),7),
-            tester.searchInsert(intArrayOf(1,3,5,6),1),
-            tester.searchInsert(intArrayOf(1,3,5,6),0)
+            tester.isPalindrome(ListNode(1,ListNode(2,ListNode(2,ListNode(1))))),
+            tester.isPalindrome(ListNode(1,ListNode(2))),
+           tester.isPalindrome(ListNode(1,ListNode(2,ListNode(3,ListNode(4,ListNode(5)))))),
+            tester.isPalindrome(ListNode(1,ListNode(1))),
+            tester.isPalindrome(ListNode(1,ListNode(2,ListNode(1))))
         )
         println(result)
 
