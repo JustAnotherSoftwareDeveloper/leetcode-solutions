@@ -1,5 +1,3 @@
-import kotlin.test.currentStackTrace
-
 /**
  * https://leetcode.com/problems/k-concatenation-maximum-sum/
  */

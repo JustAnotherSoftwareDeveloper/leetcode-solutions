@@ -1,4 +1,4 @@
-import kotlin.test.currentStackTrace
+
 
 class ContainerWithMostWater {
     fun maxArea(height: IntArray) : Int {

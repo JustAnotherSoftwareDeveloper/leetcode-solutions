@@ -1,7 +1,7 @@
 /**
  * https://leetcode.com/problems/min-stack/submissions/
  */
-class MinStack {
+class MinStackRefactor {
 
     val minStack = mutableListOf<Int>()
     val orderStack = mutableListOf<Int>()
